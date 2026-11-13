@@ -1,0 +1,49 @@
+# Conda environment for the acoustic geolocation project.
+# Create:  mamba env create -f environment.yml
+# Update:  mamba env update -f environment.yml --prune
+name: geoloc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  # core maths
+  - numpy
+  - scipy
+  - numba
+  # tables and storage
+  - pandas
+  - polars
+  - pyarrow
+  - python-duckdb
+  # audio
+  - librosa
+  - pysoundfile
+  - ffmpeg
+  # geo
+  - gdal
+  - rasterio
+  - pyproj
+  - shapely
+  - geopandas
+  - h3-py
+  - rio-cogeo
+  # weather
+  - xarray
+  - cfgrib
+  - eccodes
+  - cdsapi
+  # data access
+  - requests
+  - s3fs
+  - tqdm
+  # output
+  - matplotlib
+  - folium
+  - pydeck
+  # dev
+  - jupyterlab
+  - pytest
+  - hypothesis
+  - pip
+  - pip:
+      - pyopensky

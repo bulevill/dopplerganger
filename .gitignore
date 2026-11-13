@@ -1,0 +1,32 @@
+# --- secrets: never commit ---
+*.key
+*_api_key
+.env
+.env.*
+credentials.json
+
+# --- data and recordings (not distributed; see README) ---
+results/
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.flac
+*.parquet
+*.tif
+*.zip
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
